@@ -1,1 +1,1 @@
-# africaconnect-website
+# AfricaConnect Website
