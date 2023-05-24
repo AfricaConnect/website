@@ -37,5 +37,3 @@ Pour en savoir plus sur Next.js, consultez les ressources suivantes :
 
 - [Documentation de Next.js](https://nextjs.org/docs) - découvrez les fonctionnalités et l'API de Next.js.
 - [Apprendre Next.js](https://nextjs.org/learn) - un tutoriel interactif sur Next.js.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
