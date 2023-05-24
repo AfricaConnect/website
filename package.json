@@ -11,9 +11,12 @@
     "prettier": "npm run format:source",
     "check-all": "npm-run-all prettier lint:fix tsc",
     "tsc": "tsc --noEmit",
-    "format:source": "prettier --config .prettierrc --write \"{plugins,src}/**/*.{js,ts,jsx,tsx,css}\""
+    "format:source": "prettier --config .prettierrc --write \"{plugins,src}/**/*.{js,ts,jsx,tsx,css}\"",
+    "setup": "npm install && prisma generate && prisma migrate reset --force",
+    "setup:dev": "npx prisma migrate reset --force"
   },
   "dependencies": {
+    "@prisma/client": "^4.14.1",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -24,6 +27,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "superjson": "^1.12.3",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   },
@@ -35,6 +39,11 @@
     "postcss-preset-env": "^8.4.1",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "prisma": "^4.14.1",
+    "tsx": "^3.12.7",
     "webpack-bundle-analyzer": "^4.8.0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }

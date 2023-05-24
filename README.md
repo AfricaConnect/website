@@ -16,7 +16,19 @@
 
 ## Pour Commencer
 
-Tout d'abord, lancez le serveur de développement :
+Tout d'abord, Copier le fichier .env.example vers .env
+
+```bash
+cp env.example  .env
+```
+
+install les dependences
+
+```bash
+npm run setup
+```
+
+Puis lancez le serveur de développement :
 
 ```bash
 npm run dev
@@ -25,6 +37,7 @@ yarn dev
 # ou
 pnpm dev
 ```
+
 Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
 Vous pouvez commencer à modifier la page en modifiant `src/pages/index.tsx`. a page se met à jour automatiquement lorsque vous modifiez le fichier.
